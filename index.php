@@ -1,6 +1,8 @@
 <?php
+require_once __DIR__ . '/includes/functions.php';
 $chemin_racine = '';
 $titre_page = 'Accueil';
+require __DIR__ . '/includes/header.php';
 ?>
 
 <section class="hero mb-5">
@@ -8,8 +10,14 @@ $titre_page = 'Accueil';
         <div class="col-12 col-md-8">
             <h1>Bienvenue sur la Messagerie Apprentis / Tuteurs</h1>
             <p class="lead">
-                Service d'échange entre tuteurs et apprentis.
+                Service de messagerie sécurisé pour les apprentis et leurs tuteurs (école et entreprise).
             </p>
+            <?php if (!est_connecte()): ?>
+                <a href="register.php" class="btn btn-light btn-lg me-2">Créer un compte</a>
+                <a href="login.php" class="btn btn-outline-light btn-lg">Se connecter</a>
+            <?php else: ?>
+                <a href="inbox.php" class="btn btn-light btn-lg">Accéder à ma messagerie</a>
+            <?php endif; ?>
         </div>
     </div>
 </section>
@@ -44,4 +52,4 @@ $titre_page = 'Accueil';
     </div>
 </section>
 
-<?php?>
+<?php require __DIR__ . '/includes/footer.php'; ?>
