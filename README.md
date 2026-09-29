@@ -70,11 +70,4 @@ creer_admin.php                  Script à usage unique pour créer le compte ad
   d'accès direct (`.htaccess`), téléchargement uniquement via `download.php`
   après vérification des droits.
 
-## Ce qu'il reste à faire (hors code)
 
-Le sujet demande également, pour le Labo 1 (conception), un dossier séparé :
-schéma d'arborescence du site, maquette (Pencil) de la page d'accueil en
-version mobile et fixe, description de chaque page, ébauche du diagramme de
-base de données. Le schéma de base de données (`database.sql`) correspondant
-à ce diagramme est fourni ici ; la maquette visuelle (Pencil) reste à réaliser
-séparément, l'outil produisant un format graphique propre.
