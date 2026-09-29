@@ -1,0 +1,3 @@
+# Empêche tout accès direct aux pièces jointes : elles ne doivent être
+# servies que via download.php, qui vérifie les droits de l'utilisateur.
+Require all denied

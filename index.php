@@ -10,7 +10,9 @@ require __DIR__ . '/includes/header.php';
         <div class="col-12 col-md-8">
             <h1>Bienvenue sur la Messagerie Apprentis / Tuteurs</h1>
             <p class="lead">
-                Service de messagerie sécurisé pour les apprentis et leurs tuteurs (école et entreprise).
+                L'ESIGELEC met à disposition ce service pour faciliter les échanges entre
+                un apprenti, son tuteur école et son tuteur entreprise : suivi, informations,
+                questions... tout en un seul endroit, avec possibilité de joindre des documents PDF.
             </p>
             <?php if (!est_connecte()): ?>
                 <a href="register.php" class="btn btn-light btn-lg me-2">Créer un compte</a>
