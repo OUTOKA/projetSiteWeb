@@ -1,16 +1,11 @@
 # Messagerie Apprentis / Tuteurs — ESIGELEC
 
 Projet réalisé pour le module **MO Conception de sites web** (2026, semestre 7).
-Site PHP / MySQL / Bootstrap 5 permettant à un apprenti d'échanger avec son
+Site PHP permettant à un apprenti d'échanger avec son
 tuteur école et son tuteur entreprise (messages avec pièce jointe PDF, suivi
 de lecture), avec un espace d'administration pour attribuer les rôles et
 créer les équipes.
 
-## Prérequis
-
-- PHP 8.1+ (utilise `match`, `fn`, etc.)
-- MySQL / MariaDB
-- Un serveur web (Apache recommandé, `.htaccess` fourni pour `/uploads`)
 
 ## Installation
 
