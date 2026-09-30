@@ -1,7 +1,6 @@
 <?php
 /**
  * Fonctions utilitaires communes : sécurité, session, accès aux données.
- * Compatible PHP 5.6 (pas de types scalaires, pas de ??, pas de match, pas de fn()).
  */
 
 if (session_status() === PHP_SESSION_NONE) {

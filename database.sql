@@ -23,9 +23,7 @@ CREATE TABLE IF NOT EXISTS utilisateurs (
 ) ENGINE=InnoDB;
 
 -- ---------------------------------------------------------------------
--- Table equipes : un apprenti + son tuteur école + son tuteur entreprise
--- Un apprenti n'a qu'une seule équipe (contrainte UNIQUE sur apprenti_id)
--- Un tuteur peut apparaître dans plusieurs équipes
+-- Table equipes 
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS equipes (
     id                   INT AUTO_INCREMENT PRIMARY KEY,
@@ -55,8 +53,7 @@ CREATE TABLE IF NOT EXISTS messages (
 ) ENGINE=InnoDB;
 
 -- ---------------------------------------------------------------------
--- Table message_destinataires : 1 ou 2 destinataires par message,
--- avec suivi de lecture (bonus) et suppression individuelle (bonus)
+-- Table message_destinataires 
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS message_destinataires (
     id               INT AUTO_INCREMENT PRIMARY KEY,
@@ -70,9 +67,4 @@ CREATE TABLE IF NOT EXISTS message_destinataires (
     UNIQUE KEY uniq_msg_dest (message_id, destinataire_id)
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------------------
--- Compte administrateur par défaut
--- Ne pas insérer de mot de passe "en dur" ici : lancez une seule fois le
--- script creer_admin.php (à la racine du site) pour créer le compte admin
--- avec un hash BCRYPT correctement généré par PHP. Voir README.md.
--- ---------------------------------------------------------------------
+

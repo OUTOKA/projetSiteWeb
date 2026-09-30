@@ -5,7 +5,7 @@ requiert_role(array('apprenti', 'tuteur_ecole', 'tuteur_entreprise'));
 
 $user_id = $_SESSION['user_id'];
 
-// Suppression (bonus) d'un message reçu, uniquement pour l'utilisateur courant
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['supprimer_id'])) {
     $stmt = $pdo->prepare(
         'UPDATE message_destinataires SET supprime = 1

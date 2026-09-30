@@ -1,8 +1,5 @@
 <?php
-/**
- * Gabarit commun : en-tête + barre de navigation.
- * Attend éventuellement $titre_page et $chemin_racine définis avant l'inclusion.
- */
+
 require_once __DIR__ . '/functions.php';
 
 if (!isset($titre_page)) {

@@ -1,8 +1,6 @@
 <?php
 /**
- * Téléchargement sécurisé d'une pièce jointe : sert le fichier uniquement si
- * l'utilisateur connecté est l'expéditeur ou un destinataire du message concerné.
- * Les fichiers ne sont jamais accessibles directement dans /uploads (voir .htaccess).
+ * Téléchargement sécurisé d'une pièce jointe
  */
 require_once __DIR__ . '/includes/functions.php';
 require_once __DIR__ . '/config/db.php';

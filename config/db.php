@@ -1,7 +1,6 @@
 <?php
 /**
  * Connexion PDO à la base de données.
- * Adapter les constantes ci-dessous à votre environnement (local / serveur École).
  */
 
 const DB_HOST = 'localhost';
@@ -17,7 +16,7 @@ try {
         [
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES   => false, // requêtes préparées natives -> anti injection SQL
+            PDO::ATTR_EMULATE_PREPARES   => false, 
         ]
     );
 } catch (PDOException $e) {

@@ -1,15 +1,8 @@
 <?php
-/**
- * SCRIPT À USAGE UNIQUE
- * Crée (ou met à jour) le compte administrateur avec un mot de passe hashé
- * correctement via password_hash(). À lancer une seule fois depuis le
- * navigateur (ex: http://votre-site/creer_admin.php), PUIS À SUPPRIMER
- * (ou renommer) immédiatement après usage pour des raisons de sécurité.
- */
 require_once __DIR__ . '/config/db.php';
 
 $email = 'admin@esigelec.fr';
-$mdp   = 'Admin123!'; // à changer ici avant de lancer le script, puis à modifier après connexion
+$mdp   = 'Admin123!';
 
 $hash = password_hash($mdp, PASSWORD_BCRYPT);
 
