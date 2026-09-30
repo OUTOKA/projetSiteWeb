@@ -4,9 +4,9 @@
  */
 
 const DB_HOST = 'localhost';
-const DB_NAME = 'messagerie_apprentis';
-const DB_USER = 'root';
-const DB_PASS = '';
+const DB_NAME = 'bdd_11_7';
+const DB_USER = 'grp_11_7';
+const DB_PASS = 'mohfKn9SExaC7L18';
 
 try {
     $pdo = new PDO(
