@@ -1,0 +1,4 @@
+Tuteur: tuteur@esigelec.fr Tuteur123!
+Prof: prof@esigelec.fr Prof123!
+Eleve: test.utilisateur@outlook.com Test123!
+Admin: admin@esigelec.fr Admin123!
