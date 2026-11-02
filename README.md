@@ -7,24 +7,15 @@ de lecture), avec un espace d'administration pour attribuer les rôles et
 créer les équipes.
 
 
-## Installation
+## Connexion
 
-1. Créer la base de données :
-   ```
-   mysql -u root -p < database.sql
-   ```
-2. Configurer l'accès à la base dans `config/db.php` (hôte, nom de la base,
-   utilisateur, mot de passe).
-3. Donner les droits d'écriture au dossier `uploads/` (stockage des PDF joints) :
-   ```
-   chmod 755 uploads
-   ```
-4. Créer le compte administrateur : modifier le mot de passe souhaité dans
-   `creer_admin.php`, puis charger la page une fois dans le navigateur
-   (`http://votre-site/creer_admin.php`). **Supprimer ensuite ce fichier.**
-5. Se connecter avec le compte admin, puis :
-   - attribuer les rôles aux comptes inscrits (`admin/users.php`),
-   - créer les équipes apprenti / tuteur école / tuteur entreprise (`admin/teams.php`).
+Se rendre sur https://moduleweb.fr/grp_11_7/
+
+Se connecter avec les identifiants présents dans le fichier identifiants.txt
+
+OU
+
+Créer un compte
 
 ## Structure du projet
 
@@ -34,18 +25,18 @@ includes/functions.php Fonctions communes (session, sécurité, accès aux droit
 includes/header.php    Gabarit commun : en-tête + navigation Bootstrap
 includes/footer.php    Gabarit commun : pied de page
 css/style.css          Feuille de style externe
-index.php               Page d'accueil (visiteur)
-register.php            Création de compte (sans choix du rôle)
+index.php               Page d'accueil 
+register.php            Création de compte 
 login.php / logout.php  Authentification
 dashboard.php            Redirection selon le rôle
-inbox.php                Messages reçus (+ suppression, bonus)
-sent.php                 Messages envoyés (bonus)
+inbox.php                Messages reçus 
+sent.php                 Messages envoyés 
 compose.php               Nouveau message / réponse (destinataire(s), pièce jointe PDF)
-message.php                Lecture d'un message + statut de lecture (bonus)
+message.php                Lecture d'un message + statut de lecture 
 download.php               Téléchargement sécurisé d'une pièce jointe
 admin/index.php             Tableau de bord admin
 admin/users.php              Attribution des rôles
-admin/teams.php               Gestion des équipes (création + suppression, bonus)
+admin/teams.php               Gestion des équipes 
 database.sql                   Script de création de la base de données
 creer_admin.php                  Script à usage unique pour créer le compte admin
 ```
