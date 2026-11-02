@@ -3,10 +3,10 @@
 -- MO Conception de sites web - 2026 semestre 7
 -- =====================================================================
 
-CREATE DATABASE IF NOT EXISTS bdd_grp11_7
+CREATE DATABASE IF NOT EXISTS bdd_11_7
     CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE bdd_grp11_7;
+USE bdd_11_7;
 
 -- ---------------------------------------------------------------------
 -- Table utilisateurs
